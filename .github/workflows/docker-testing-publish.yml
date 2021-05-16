@@ -2,9 +2,10 @@ name: Publish Docker testing image
 
 on:
   push:
+      - 'feature/*'
 
 jobs:
-  docker-testing:
+  docker-testing-image:
     runs-on: ubuntu-latest
     if: github.ref != 'refs/heads/main'
 
