@@ -2,7 +2,7 @@
 FROM alpine:latest
 
 RUN apk update && \
-  apk add --no-cache nano mc micro rsync ncdu
+  apk add --no-cache nano mc micro rsync ncdu wget
 
 # zsh installation
 RUN apk update && \
