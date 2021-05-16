@@ -2,6 +2,7 @@ name: Publish Docker testing image
 
 on:
   push:
+    branches:
       - 'feature/*'
 
 jobs:
